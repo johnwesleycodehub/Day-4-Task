@@ -124,3 +124,33 @@ console.log(add([21, 22, 23, 24, 25, 26]));
 
 //! Task d: Return all the prime numbers in an array using Anonymous function, IIFE & Arrow function
 //! using Anonymous function
+
+//------------------------------------------------------------------------
+
+//! task g: Remove duplicates from an array using Anonymous function, IIFE & Arrow function
+//! using Anonymous function
+/*
+var a = function (array) {
+  let dup = [...new Set(array)];
+  return dup;
+};
+console.log(a([1, 1, 2, 2, 3, 3, 4, 5]));
+*/
+
+//! using IIFE function
+/*
+(function (array) {
+  let dup = [...new Set(array)];
+  console.log(dup);
+})([1, 1, 2, 2, 3, 3, 4, 5]);
+*/
+
+//! using Arrow function
+/*var fresh = (array) => {
+  let dup = [...new Set(array)];
+  return dup;
+};
+console.log(fresh([1, 1, 2, 2, 3, 3, 4, 5]));
+*/
+
+
